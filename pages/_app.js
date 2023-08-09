@@ -1,19 +1,17 @@
 import "../styles/globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
-import Feature from "../components/Feature";
-import Grid from "../components/Grid";
-import Page from "../components/Page";
-import Teaser from "../components/Teaser";
+import Home from '../components/Home'
 
 const components = {
-  feature: Feature,
-  grid: Grid,
-  teaser: Teaser,
-  page: Page,
+  // feature: Feature,
+  // grid: Grid,
+  // teaser: Teaser,
+  // page: Page,
+  home : Home
 };
 
 storyblokInit({
-  accessToken: "your-preview-token",
+  accessToken: "jzQhjZ1f0e2RTFeecEDq4gtt",
   use: [apiPlugin],
   components,
 });

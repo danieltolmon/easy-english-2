@@ -1,27 +1,29 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 import {
   useStoryblokState,
   getStoryblokApi,
   StoryblokComponent,
 } from "@storyblok/react";
+import HomePage from '../components/Home'
+
+import Menu from '../components/Menu'
 
 export default function Home({ story }) {
   story = useStoryblokState(story);
 
+  console.log(story.content)
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
       </Head>
 
-      <header>
-        <h1>{story ? story.name : "My Site"}</h1>
-      </header>
-
-      <StoryblokComponent blok={story.content} />
+      <Menu />
+      <HomePage blok={story.content.body[0]} />
     </div>
   );
 }
