@@ -837,6 +837,11 @@
   dependencies:
     "rollup-plugin-mjs-entry" "^0.1.1"
 
+"storyblok-rich-text-react-renderer@^2.9.0":
+  "integrity" "sha512-AEcWGVrs7Y5O3cFn5kbhy+Odesk5Rf5JTXAhJrFPgIXybrAfVpzZeOUYuIjjPgGvQ3M/f7PieZg/SHUQVq34QA=="
+  "resolved" "https://registry.npmjs.org/storyblok-rich-text-react-renderer/-/storyblok-rich-text-react-renderer-2.9.0.tgz"
+  "version" "2.9.0"
+
 "styled-jsx@5.0.0":
   "integrity" "sha512-qUqsWoBquEdERe10EW8vLp3jT25s/ssG1/qX5gZ4wu15OZpmSMFI2v+fWlRhLfykA5rFtlJ1ME8A8pm/peV4WA=="
   "resolved" "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.0.0.tgz"
